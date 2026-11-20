@@ -1,0 +1,1214 @@
+{
+  "data": "Deterministic seeded synthetic data; no external data or fitted parameters.",
+  "use": "Educational only; not investment advice.",
+  "n_per_model": 200000,
+  "seed": 1729,
+  "generator": "NumPy PCG64",
+  "alpha": 0.05,
+  "interval_scope": "Pointwise iid Monte Carlo uncertainty at fixed population q; not uncertainty in the asymptotic limit, fitted parameters, or model choice.",
+  "coupling": "Models reuse a seed and therefore are not independent of one another. No interval for a between-model difference is constructed.",
+  "models": {
+    "Gaussian": {
+      "configuration": {
+        "family": "gaussian",
+        "tau": 0.35,
+        "df": null
+      },
+      "latent_rho": 0.5224985647159488,
+      "upper_tail_limit": 0.0,
+      "sample_kendall_tau": 0.3503941021705108,
+      "marginal_means": [
+        0.4989434691591599,
+        0.49947812609370035
+      ],
+      "marginal_exceedance_at_099": [
+        0.009555,
+        0.009415
+      ],
+      "thresholds": [
+        {
+          "reference": {
+            "q": 0.9,
+            "conditional_probability": 0.3380697968689145,
+            "joint_probability": 0.03380697968689144,
+            "quadrature_error_estimate": 6.014011511012995e-11,
+            "upper_tail_limit": 0.0
+          },
+          "estimate": {
+            "q": 0.9,
+            "samples": 200000,
+            "conditioning_count": 19914,
+            "joint_count": 6666,
+            "conditional_estimate": 0.33473937933112385,
+            "conditional_interval": [
+              0.3281846095347159,
+              0.34134242743178317
+            ],
+            "joint_estimate": 0.03333,
+            "joint_interval": [
+              0.03254760428049885,
+              0.034125959351037
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.95,
+            "conditional_probability": 0.2576986070265525,
+            "joint_probability": 0.012884930351327636,
+            "quadrature_error_estimate": 2.6063634583906037e-10,
+            "upper_tail_limit": 0.0
+          },
+          "estimate": {
+            "q": 0.95,
+            "samples": 200000,
+            "conditioning_count": 9899,
+            "joint_count": 2493,
+            "conditional_estimate": 0.2518436205677341,
+            "conditional_interval": [
+              0.24331615600840917,
+              0.26051731165952813
+            ],
+            "joint_estimate": 0.012465,
+            "joint_interval": [
+              0.01198333047036752,
+              0.012960876197307535
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.975,
+            "conditional_probability": 0.19801143043070998,
+            "joint_probability": 0.004950285760767754,
+            "quadrature_error_estimate": 1.7049348044473334e-10,
+            "upper_tail_limit": 0.0
+          },
+          "estimate": {
+            "q": 0.975,
+            "samples": 200000,
+            "conditioning_count": 4998,
+            "joint_count": 932,
+            "conditional_estimate": 0.18647458983593437,
+            "conditional_interval": [
+              0.17576199205544335,
+              0.19755464447662519
+            ],
+            "joint_estimate": 0.00466,
+            "joint_interval": [
+              0.0043662205724000775,
+              0.004968274601284201
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.99,
+            "conditional_probability": 0.1409962662574173,
+            "joint_probability": 0.0014099626625741742,
+            "quadrature_error_estimate": 3.3218194861461825e-10,
+            "upper_tail_limit": 0.0
+          },
+          "estimate": {
+            "q": 0.99,
+            "samples": 200000,
+            "conditioning_count": 1911,
+            "joint_count": 242,
+            "conditional_estimate": 0.12663526949241236,
+            "conditional_interval": [
+              0.11204464428486152,
+              0.1423820521328601
+            ],
+            "joint_estimate": 0.00121,
+            "joint_interval": [
+              0.0010624159633521799,
+              0.0013723318251233798
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.995,
+            "conditional_probability": 0.10959148480286025,
+            "joint_probability": 0.0005479574240143017,
+            "quadrature_error_estimate": 4.529493446980837e-10,
+            "upper_tail_limit": 0.0
+          },
+          "estimate": {
+            "q": 0.995,
+            "samples": 200000,
+            "conditioning_count": 975,
+            "joint_count": 82,
+            "conditional_estimate": 0.0841025641025641,
+            "conditional_interval": [
+              0.06744595851991125,
+              0.1033192924281472
+            ],
+            "joint_estimate": 0.00041,
+            "joint_interval": [
+              0.00032609803551429326,
+              0.0005088929334093861
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.999,
+            "conditional_probability": 0.061769486210279126,
+            "joint_probability": 6.176948621027918e-05,
+            "quadrature_error_estimate": 1.1056627835515087e-11,
+            "upper_tail_limit": 0.0
+          },
+          "estimate": {
+            "q": 0.999,
+            "samples": 200000,
+            "conditioning_count": 187,
+            "joint_count": 12,
+            "conditional_estimate": 0.06417112299465241,
+            "conditional_interval": [
+              0.033594808035768794,
+              0.10941053133660393
+            ],
+            "joint_estimate": 6e-05,
+            "joint_interval": [
+              3.1003247542343734e-05,
+              0.00010480557713051478
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.9999,
+            "conditional_probability": 0.02773148996901576,
+            "joint_probability": 2.7731489969012706e-06,
+            "quadrature_error_estimate": 1.5241755774164645e-11,
+            "upper_tail_limit": 0.0
+          },
+          "estimate": {
+            "q": 0.9999,
+            "samples": 200000,
+            "conditioning_count": 16,
+            "joint_count": 0,
+            "conditional_estimate": 0.0,
+            "conditional_interval": [
+              0.0,
+              0.20590721420782274
+            ],
+            "joint_estimate": 0.0,
+            "joint_interval": [
+              0.0,
+              1.844422717372012e-05
+            ],
+            "alpha": 0.05
+          }
+        }
+      ],
+      "reference_curve": [
+        {
+          "q": 0.9,
+          "conditional_probability": 0.3380697968689145,
+          "joint_probability": 0.03380697968689144,
+          "quadrature_error_estimate": 6.014011511012995e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9250105790667544,
+          "conditional_probability": 0.3016801745739859,
+          "joint_probability": 0.022622821598343633,
+          "quadrature_error_estimate": 1.249562120442249e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9437658674809651,
+          "conditional_probability": 0.26966167404479285,
+          "joint_probability": 0.015164190313539666,
+          "quadrature_error_estimate": 2.1610063738464191e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9578303496571418,
+          "conditional_probability": 0.24138971139621895,
+          "joint_probability": 0.010179319725942017,
+          "quadrature_error_estimate": 3.322062069877063e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9683772233983162,
+          "conditional_probability": 0.21635275915009494,
+          "joint_probability": 0.006841674969761348,
+          "quadrature_error_estimate": 4.699200473190501e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9762862629433835,
+          "conditional_probability": 0.1941258932692678,
+          "joint_probability": 0.004603450388868216,
+          "quadrature_error_estimate": 1.7914517091988102e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9822172058996108,
+          "conditional_probability": 0.1743520728400293,
+          "joint_probability": 0.003100467012290299,
+          "quadrature_error_estimate": 2.2832716273235576e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9866647856783668,
+          "conditional_probability": 0.15672847612324436,
+          "joint_probability": 0.002090007819406436,
+          "quadrature_error_estimate": 2.7985380679496075e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.99,
+          "conditional_probability": 0.1409962662574173,
+          "joint_probability": 0.0014099626625741742,
+          "quadrature_error_estimate": 3.3218194861461825e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9925010579066754,
+          "conditional_probability": 0.12693275655043193,
+          "joint_probability": 0.0009518613911177552,
+          "quadrature_error_estimate": 3.8382155786997885e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9943765867480965,
+          "conditional_probability": 0.1143452999781555,
+          "joint_probability": 0.0006430108751900429,
+          "quadrature_error_estimate": 4.334988479293145e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9957830349657142,
+          "conditional_probability": 0.10306644652889208,
+          "joint_probability": 0.00043462760122042635,
+          "quadrature_error_estimate": 4.801056219250199e-10,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9968377223398316,
+          "conditional_probability": 0.09295005181525087,
+          "joint_probability": 0.0002939338723668641,
+          "quadrature_error_estimate": 6.977737831981301e-12,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9976286262943383,
+          "conditional_probability": 0.08386811219816939,
+          "joint_probability": 0.00019888263601022,
+          "quadrature_error_estimate": 8.046785460180672e-12,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9982217205899611,
+          "conditional_probability": 0.07570816354221878,
+          "joint_probability": 0.00013463026839898848,
+          "quadrature_error_estimate": 9.096182140844178e-12,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9986664785678366,
+          "conditional_probability": 0.06837112337263877,
+          "joint_probability": 9.117435835849936e-05,
+          "quadrature_error_estimate": 1.0101294800612948e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.999,
+          "conditional_probability": 0.061769486210279126,
+          "joint_probability": 6.176948621027918e-05,
+          "quadrature_error_estimate": 1.1056627835515087e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9992501057906675,
+          "conditional_probability": 0.055825803361368234,
+          "joint_probability": 4.186344667202312e-05,
+          "quadrature_error_estimate": 1.1926098997250278e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9994376586748096,
+          "conditional_probability": 0.05047139410491014,
+          "joint_probability": 2.8382150645161927e-05,
+          "quadrature_error_estimate": 1.2705878016383565e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9995783034965714,
+          "conditional_probability": 0.04564524681004959,
+          "joint_probability": 1.924844097793353e-05,
+          "quadrature_error_estimate": 1.339200972338972e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9996837722339832,
+          "conditional_probability": 0.041293077209672235,
+          "joint_probability": 1.305801755797421e-05,
+          "quadrature_error_estimate": 1.3972552281860118e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9997628626294338,
+          "conditional_probability": 0.037366517662527965,
+          "joint_probability": 8.860997745706874e-06,
+          "quadrature_error_estimate": 1.4447838758702147e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9998221720589962,
+          "conditional_probability": 0.033822416314694244,
+          "joint_probability": 6.0145706530170916e-06,
+          "quadrature_error_estimate": 1.4813622550846617e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9998666478567837,
+          "conditional_probability": 0.03062222901893917,
+          "joint_probability": 4.083539869736011e-06,
+          "quadrature_error_estimate": 1.5078566867332555e-11,
+          "upper_tail_limit": 0.0
+        },
+        {
+          "q": 0.9999,
+          "conditional_probability": 0.02773148996901576,
+          "joint_probability": 2.7731489969012706e-06,
+          "quadrature_error_estimate": 1.5241755774164645e-11,
+          "upper_tail_limit": 0.0
+        }
+      ]
+    },
+    "Student t (df=12)": {
+      "configuration": {
+        "family": "student",
+        "tau": 0.35,
+        "df": 12
+      },
+      "latent_rho": 0.5224985647159488,
+      "upper_tail_limit": 0.06457766300197482,
+      "sample_kendall_tau": 0.3504616551082755,
+      "marginal_means": [
+        0.4990034038600992,
+        0.49954629268697337
+      ],
+      "marginal_exceedance_at_099": [
+        0.00989,
+        0.009925
+      ],
+      "thresholds": [
+        {
+          "reference": {
+            "q": 0.9,
+            "conditional_probability": 0.35857977618883563,
+            "joint_probability": 0.035857977618883555,
+            "quadrature_error_estimate": 9.505801701337191e-11,
+            "upper_tail_limit": 0.06457766300197482
+          },
+          "estimate": {
+            "q": 0.9,
+            "samples": 200000,
+            "conditioning_count": 20009,
+            "joint_count": 7084,
+            "conditional_estimate": 0.35404068169323805,
+            "conditional_interval": [
+              0.34741109392036557,
+              0.36071270343634676
+            ],
+            "joint_estimate": 0.03542,
+            "joint_interval": [
+              0.03461416159160834,
+              0.03623933966122732
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.95,
+            "conditional_probability": 0.2910421744570597,
+            "joint_probability": 0.014552108722852999,
+            "quadrature_error_estimate": 2.898443152155039e-10,
+            "upper_tail_limit": 0.06457766300197482
+          },
+          "estimate": {
+            "q": 0.95,
+            "samples": 200000,
+            "conditioning_count": 9958,
+            "joint_count": 2813,
+            "conditional_estimate": 0.2824864430608556,
+            "conditional_interval": [
+              0.27365835662956767,
+              0.29144190230154465
+            ],
+            "joint_estimate": 0.014065,
+            "joint_interval": [
+              0.013553459932017705,
+              0.014590694592841267
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.975,
+            "conditional_probability": 0.24293912958353917,
+            "joint_probability": 0.006073478239588485,
+            "quadrature_error_estimate": 2.752386651927452e-10,
+            "upper_tail_limit": 0.06457766300197482
+          },
+          "estimate": {
+            "q": 0.975,
+            "samples": 200000,
+            "conditioning_count": 5013,
+            "joint_count": 1138,
+            "conditional_estimate": 0.2270097745860762,
+            "conditional_interval": [
+              0.21547560390022452,
+              0.2388626625910938
+            ],
+            "joint_estimate": 0.00569,
+            "joint_interval": [
+              0.005365033140161193,
+              0.006029416991810042
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.99,
+            "conditional_probability": 0.19825110426815526,
+            "joint_probability": 0.001982511042681554,
+            "quadrature_error_estimate": 2.8574667632064177e-10,
+            "upper_tail_limit": 0.06457766300197482
+          },
+          "estimate": {
+            "q": 0.99,
+            "samples": 200000,
+            "conditioning_count": 1978,
+            "joint_count": 377,
+            "conditional_estimate": 0.19059656218402427,
+            "conditional_interval": [
+              0.17350319889806626,
+              0.20861212584677322
+            ],
+            "joint_estimate": 0.001885,
+            "joint_interval": [
+              0.001699654497006563,
+              0.0020850121028009884
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.995,
+            "conditional_probability": 0.17385881050774146,
+            "joint_probability": 0.000869294052538708,
+            "quadrature_error_estimate": 5.493550059298968e-12,
+            "upper_tail_limit": 0.06457766300197482
+          },
+          "estimate": {
+            "q": 0.995,
+            "samples": 200000,
+            "conditioning_count": 959,
+            "joint_count": 174,
+            "conditional_estimate": 0.18143899895724713,
+            "conditional_interval": [
+              0.15753458206218154,
+              0.2073171706780882
+            ],
+            "joint_estimate": 0.00087,
+            "joint_interval": [
+              0.0007455749533199869,
+              0.0010092380119637292
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.999,
+            "conditional_probability": 0.13598883438414003,
+            "joint_probability": 0.00013598883438414015,
+            "quadrature_error_estimate": 4.702468137107729e-10,
+            "upper_tail_limit": 0.06457766300197482
+          },
+          "estimate": {
+            "q": 0.999,
+            "samples": 200000,
+            "conditioning_count": 187,
+            "joint_count": 30,
+            "conditional_estimate": 0.16042780748663102,
+            "conditional_interval": [
+              0.11093374300249947,
+              0.22103169641068945
+            ],
+            "joint_estimate": 0.00015,
+            "joint_interval": [
+              0.00010120658638048496,
+              0.0002141274601962361
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.9999,
+            "conditional_probability": 0.10634273470994968,
+            "joint_probability": 1.0634273470993797e-05,
+            "quadrature_error_estimate": 1.2006760863325638e-10,
+            "upper_tail_limit": 0.06457766300197482
+          },
+          "estimate": {
+            "q": 0.9999,
+            "samples": 200000,
+            "conditioning_count": 18,
+            "joint_count": 3,
+            "conditional_estimate": 0.16666666666666666,
+            "conditional_interval": [
+              0.035785083121574676,
+              0.4141774913947741
+            ],
+            "joint_estimate": 1.5e-05,
+            "joint_interval": [
+              3.0933712969053215e-06,
+              4.3835733311900165e-05
+            ],
+            "alpha": 0.05
+          }
+        }
+      ],
+      "reference_curve": [
+        {
+          "q": 0.9,
+          "conditional_probability": 0.35857977618883563,
+          "joint_probability": 0.035857977618883555,
+          "quadrature_error_estimate": 9.505801701337191e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9250105790667544,
+          "conditional_probability": 0.32758763253224316,
+          "joint_probability": 0.024565606868485752,
+          "quadrature_error_estimate": 4.729242553125346e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9437658674809651,
+          "conditional_probability": 0.30088561344511633,
+          "joint_probability": 0.016920041459543768,
+          "quadrature_error_estimate": 2.1771123792646563e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9578303496571418,
+          "conditional_probability": 0.27773603246156175,
+          "joint_probability": 0.011712031376516786,
+          "quadrature_error_estimate": 4.278127296863943e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9683772233983162,
+          "conditional_probability": 0.2575518134066183,
+          "joint_probability": 0.008144503458716036,
+          "quadrature_error_estimate": 1.1160627977346849e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9762862629433835,
+          "conditional_probability": 0.23986087282718746,
+          "joint_probability": 0.005687997668394454,
+          "quadrature_error_estimate": 3.140318283190169e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9822172058996108,
+          "conditional_probability": 0.2242801466114986,
+          "joint_probability": 0.0039883276679973795,
+          "quadrature_error_estimate": 5.466432861922499e-12,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9866647856783668,
+          "conditional_probability": 0.2104962884616176,
+          "joint_probability": 0.0028070131205439972,
+          "quadrature_error_estimate": 1.7209389469030612e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.99,
+          "conditional_probability": 0.19825110426815526,
+          "joint_probability": 0.001982511042681554,
+          "quadrature_error_estimate": 2.8574667632064177e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9925010579066754,
+          "conditional_probability": 0.1873304186095906,
+          "joint_probability": 0.001404779961471573,
+          "quadrature_error_estimate": 4.74014022477931e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9943765867480965,
+          "conditional_probability": 0.17755546970301161,
+          "joint_probability": 0.0009984677812758694,
+          "quadrature_error_estimate": 1.9368118220342012e-12,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9957830349657142,
+          "conditional_probability": 0.16877619417041234,
+          "joint_probability": 0.000711723309436462,
+          "quadrature_error_estimate": 1.2550904759933701e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9968377223398316,
+          "conditional_probability": 0.16086594083026753,
+          "joint_probability": 0.0005087027709695284,
+          "quadrature_error_estimate": 5.962647042778713e-12,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9976286262943383,
+          "conditional_probability": 0.1537172767574931,
+          "joint_probability": 0.00036452110820863387,
+          "quadrature_error_estimate": 1.2382039837888215e-12,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9982217205899611,
+          "conditional_probability": 0.14723863597429507,
+          "joint_probability": 0.0002618314347153078,
+          "quadrature_error_estimate": 7.494560527732119e-13,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9986664785678366,
+          "conditional_probability": 0.1413516236627154,
+          "joint_probability": 0.0001884954196253212,
+          "quadrature_error_estimate": 4.576228285202433e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.999,
+          "conditional_probability": 0.13598883438414003,
+          "joint_probability": 0.00013598883438414015,
+          "quadrature_error_estimate": 4.702468137107729e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9992501057906675,
+          "conditional_probability": 0.1310920758146995,
+          "joint_probability": 9.830518854281617e-05,
+          "quadrature_error_estimate": 9.966175107400943e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9994376586748096,
+          "conditional_probability": 0.1266109151867982,
+          "joint_probability": 7.119854982971299e-05,
+          "quadrature_error_estimate": 9.456782579242429e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9995783034965714,
+          "conditional_probability": 0.12250148337831264,
+          "joint_probability": 5.165844720545164e-05,
+          "quadrature_error_estimate": 9.54124695917713e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9996837722339832,
+          "conditional_probability": 0.11872548630074094,
+          "joint_probability": 3.7544295302142424e-05,
+          "quadrature_error_estimate": 9.968936787174698e-11,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9997628626294338,
+          "conditional_probability": 0.11524938395110453,
+          "joint_probability": 2.7329935869537864e-05,
+          "quadrature_error_estimate": 1.0429979102610787e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9998221720589962,
+          "conditional_probability": 0.11204370563251079,
+          "joint_probability": 1.992450147507083e-05,
+          "quadrature_error_estimate": 1.0972424357991173e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9998666478567837,
+          "conditional_probability": 0.1090824763963661,
+          "joint_probability": 1.4546382014797223e-05,
+          "quadrature_error_estimate": 1.1371248387348487e-10,
+          "upper_tail_limit": 0.06457766300197482
+        },
+        {
+          "q": 0.9999,
+          "conditional_probability": 0.10634273470994968,
+          "joint_probability": 1.0634273470993797e-05,
+          "quadrature_error_estimate": 1.2006760863325638e-10,
+          "upper_tail_limit": 0.06457766300197482
+        }
+      ]
+    },
+    "Student t (df=4)": {
+      "configuration": {
+        "family": "student",
+        "tau": 0.35,
+        "df": 4
+      },
+      "latent_rho": 0.5224985647159488,
+      "upper_tail_limit": 0.2658589108877247,
+      "sample_kendall_tau": 0.34912774593872964,
+      "marginal_means": [
+        0.4990058295418237,
+        0.4994833737083581
+      ],
+      "marginal_exceedance_at_099": [
+        0.00997,
+        0.00989
+      ],
+      "thresholds": [
+        {
+          "reference": {
+            "q": 0.9,
+            "conditional_probability": 0.3974079667116483,
+            "joint_probability": 0.03974079667116482,
+            "quadrature_error_estimate": 6.028538779290216e-11,
+            "upper_tail_limit": 0.2658589108877247
+          },
+          "estimate": {
+            "q": 0.9,
+            "samples": 200000,
+            "conditioning_count": 19847,
+            "joint_count": 7788,
+            "conditional_estimate": 0.392401874338691,
+            "conditional_interval": [
+              0.385599655766655,
+              0.39923562705176885
+            ],
+            "joint_estimate": 0.03894,
+            "joint_interval": [
+              0.03809636261106914,
+              0.039797033920907596
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.95,
+            "conditional_probability": 0.3520340074173209,
+            "joint_probability": 0.01760170037086606,
+            "quadrature_error_estimate": 8.053213651493252e-11,
+            "upper_tail_limit": 0.2658589108877247
+          },
+          "estimate": {
+            "q": 0.95,
+            "samples": 200000,
+            "conditioning_count": 9967,
+            "joint_count": 3517,
+            "conditional_estimate": 0.35286445269388983,
+            "conditional_interval": [
+              0.3434770101598692,
+              0.36233794059687535
+            ],
+            "joint_estimate": 0.017585,
+            "joint_interval": [
+              0.017013460843791982,
+              0.018170581855181438
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.975,
+            "conditional_probability": 0.3236462970717272,
+            "joint_probability": 0.008091157426793187,
+            "quadrature_error_estimate": 9.956530044874512e-11,
+            "upper_tail_limit": 0.2658589108877247
+          },
+          "estimate": {
+            "q": 0.975,
+            "samples": 200000,
+            "conditioning_count": 5004,
+            "joint_count": 1649,
+            "conditional_estimate": 0.32953637090327736,
+            "conditional_interval": [
+              0.3165154728141614,
+              0.34275640310987915
+            ],
+            "joint_estimate": 0.008245,
+            "joint_interval": [
+              0.007853334194283973,
+              0.008651017342098218
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.99,
+            "conditional_probability": 0.3007543539650298,
+            "joint_probability": 0.0030075435396503007,
+            "quadrature_error_estimate": 1.174786934399208e-10,
+            "upper_tail_limit": 0.2658589108877247
+          },
+          "estimate": {
+            "q": 0.99,
+            "samples": 200000,
+            "conditioning_count": 1994,
+            "joint_count": 599,
+            "conditional_estimate": 0.3004012036108325,
+            "conditional_interval": [
+              0.28033452484194304,
+              0.3210564122049962
+            ],
+            "joint_estimate": 0.002995,
+            "joint_interval": [
+              0.00276024261317846,
+              0.003244340244214216
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.995,
+            "conditional_probability": 0.28997222907436565,
+            "joint_probability": 0.0014498611453718296,
+            "quadrature_error_estimate": 1.2752110478686518e-10,
+            "upper_tail_limit": 0.2658589108877247
+          },
+          "estimate": {
+            "q": 0.995,
+            "samples": 200000,
+            "conditioning_count": 996,
+            "joint_count": 295,
+            "conditional_estimate": 0.2961847389558233,
+            "conditional_interval": [
+              0.2679651525269471,
+              0.32561466740564216
+            ],
+            "joint_estimate": 0.001475,
+            "joint_interval": [
+              0.0013115712002445632,
+              0.0016531397239795411
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.999,
+            "conditional_probability": 0.27631990495322306,
+            "joint_probability": 0.00027631990495322333,
+            "quadrature_error_estimate": 1.3982986990512813e-10,
+            "upper_tail_limit": 0.2658589108877247
+          },
+          "estimate": {
+            "q": 0.999,
+            "samples": 200000,
+            "conditioning_count": 182,
+            "joint_count": 49,
+            "conditional_estimate": 0.2692307692307692,
+            "conditional_interval": [
+              0.20629187591923845,
+              0.3398517826395028
+            ],
+            "joint_estimate": 0.000245,
+            "joint_interval": [
+              0.0001812576732609168,
+              0.000323890214093215
+            ],
+            "alpha": 0.05
+          }
+        },
+        {
+          "reference": {
+            "q": 0.9999,
+            "conditional_probability": 0.2691123512031915,
+            "joint_probability": 2.6911235120316185e-05,
+            "quadrature_error_estimate": 1.495873980239537e-10,
+            "upper_tail_limit": 0.2658589108877247
+          },
+          "estimate": {
+            "q": 0.9999,
+            "samples": 200000,
+            "conditioning_count": 12,
+            "joint_count": 1,
+            "conditional_estimate": 0.08333333333333333,
+            "conditional_interval": [
+              0.0021075932318602264,
+              0.38479616515094406
+            ],
+            "joint_estimate": 5e-06,
+            "joint_interval": [
+              1.265890319090572e-07,
+              2.7857898562196944e-05
+            ],
+            "alpha": 0.05
+          }
+        }
+      ],
+      "reference_curve": [
+        {
+          "q": 0.9,
+          "conditional_probability": 0.3974079667116483,
+          "joint_probability": 0.03974079667116482,
+          "quadrature_error_estimate": 6.028538779290216e-11,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9250105790667544,
+          "conditional_probability": 0.3758397157679389,
+          "joint_probability": 0.028184002649153342,
+          "quadrature_error_estimate": 7.013878366990411e-11,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9437658674809651,
+          "conditional_probability": 0.3582655234434383,
+          "joint_probability": 0.0201467509223197,
+          "quadrature_error_estimate": 7.909317645271585e-11,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9578303496571418,
+          "conditional_probability": 0.3438307242949836,
+          "joint_probability": 0.014499221420651154,
+          "quadrature_error_estimate": 8.688910702048247e-11,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9683772233983162,
+          "conditional_probability": 0.3318909686987658,
+          "joint_probability": 0.010495313959277493,
+          "quadrature_error_estimate": 9.347445040219782e-11,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9762862629433835,
+          "conditional_probability": 0.3219542805388312,
+          "joint_probability": 0.007634739152949986,
+          "quadrature_error_estimate": 1.0109729720042537e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9822172058996108,
+          "conditional_probability": 0.313640416308886,
+          "joint_probability": 0.005577402944781267,
+          "quadrature_error_estimate": 1.0782386095087304e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9866647856783668,
+          "conditional_probability": 0.30665208671250194,
+          "joint_probability": 0.004089271298487263,
+          "quadrature_error_estimate": 1.1200174121483997e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.99,
+          "conditional_probability": 0.3007543539650298,
+          "joint_probability": 0.0030075435396503007,
+          "quadrature_error_estimate": 1.174786934399208e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9925010579066754,
+          "conditional_probability": 0.2957597102814388,
+          "joint_probability": 0.0022178849409389637,
+          "quadrature_error_estimate": 1.2213136058036866e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9943765867480965,
+          "conditional_probability": 0.29151714316996014,
+          "joint_probability": 0.0016393213660590095,
+          "quadrature_error_estimate": 1.2636863777615304e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9957830349657142,
+          "conditional_probability": 0.28790402842497065,
+          "joint_probability": 0.0012140812210981301,
+          "quadrature_error_estimate": 1.2894280088104892e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9968377223398316,
+          "conditional_probability": 0.2848200506899354,
+          "joint_probability": 0.000900680083464817,
+          "quadrature_error_estimate": 1.316748377000465e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9976286262943383,
+          "conditional_probability": 0.282182594272696,
+          "joint_probability": 0.000669160384253661,
+          "quadrature_error_estimate": 1.3422563061027404e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9982217205899611,
+          "conditional_probability": 0.27992321112101,
+          "joint_probability": 0.0004977816827284755,
+          "quadrature_error_estimate": 1.3685980126965092e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9986664785678366,
+          "conditional_probability": 0.2779848870144653,
+          "joint_probability": 0.0003706988046513009,
+          "quadrature_error_estimate": 1.3826195743860126e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.999,
+          "conditional_probability": 0.27631990495322306,
+          "joint_probability": 0.00027631990495322333,
+          "quadrature_error_estimate": 1.3982986990512813e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9992501057906675,
+          "conditional_probability": 0.27488816004269123,
+          "joint_probability": 0.00020613703943007114,
+          "quadrature_error_estimate": 1.4357598443481834e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9994376586748096,
+          "conditional_probability": 0.2736558189807949,
+          "joint_probability": 0.00015388797589172343,
+          "quadrature_error_estimate": 1.42603262531793e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9995783034965714,
+          "conditional_probability": 0.27259424503866136,
+          "joint_probability": 0.00011495203998756345,
+          "quadrature_error_estimate": 1.4604240039517435e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9996837722339832,
+          "conditional_probability": 0.27167912942114153,
+          "joint_probability": 8.591248417023879e-05,
+          "quadrature_error_estimate": 1.4719186980372e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9997628626294338,
+          "conditional_probability": 0.2708897844636076,
+          "joint_probability": 6.42380912009411e-05,
+          "quadrature_error_estimate": 1.4701279082984797e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9998221720589962,
+          "conditional_probability": 0.2702085647653924,
+          "joint_probability": 4.8050632713835096e-05,
+          "quadrature_error_estimate": 1.4793638536403364e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9998666478567837,
+          "conditional_probability": 0.2696203902719886,
+          "joint_probability": 3.595445689758578e-05,
+          "quadrature_error_estimate": 1.4989059993197884e-10,
+          "upper_tail_limit": 0.2658589108877247
+        },
+        {
+          "q": 0.9999,
+          "conditional_probability": 0.2691123512031915,
+          "joint_probability": 2.6911235120316185e-05,
+          "quadrature_error_estimate": 1.495873980239537e-10,
+          "upper_tail_limit": 0.2658589108877247
+        }
+      ]
+    }
+  },
+  "zero_rank_control": {
+    "q": 0.99,
+    "df": 4,
+    "population_kendall_tau": 0,
+    "shared": {
+      "sample_kendall_tau": -0.0012646970234851172,
+      "marginal_means": [
+        0.4990058295418237,
+        0.49994136308170933
+      ],
+      "marginal_exceedance_at_099": [
+        0.00997,
+        0.009915
+      ],
+      "estimate": {
+        "q": 0.99,
+        "samples": 200000,
+        "conditioning_count": 1994,
+        "joint_count": 192,
+        "conditional_estimate": 0.09628886659979939,
+        "conditional_interval": [
+          0.0836913272327594,
+          0.11008729796704636
+        ],
+        "joint_estimate": 0.00096,
+        "joint_interval": [
+          0.0008290579263906256,
+          0.0011057349829235875
+        ],
+        "alpha": 0.05
+      },
+      "reference_conditional_probability": 0.09457846338342488,
+      "upper_tail_limit": 0.0755868184216124
+    },
+    "separate": {
+      "sample_kendall_tau": 0.00024342731713658563,
+      "marginal_means": [
+        0.4988467418216897,
+        0.49996250548120724
+      ],
+      "marginal_exceedance_at_099": [
+        0.009795,
+        0.009875
+      ],
+      "estimate": {
+        "q": 0.99,
+        "samples": 200000,
+        "conditioning_count": 1959,
+        "joint_count": 18,
+        "conditional_estimate": 0.009188361408882083,
+        "conditional_interval": [
+          0.005454436924517418,
+          0.014482834438260785
+        ],
+        "joint_estimate": 9e-05,
+        "joint_interval": [
+          5.3340548306151805e-05,
+          0.00014223508613182994
+        ],
+        "alpha": 0.05
+      },
+      "reference_conditional_probability": 0.010000000000000009,
+      "upper_tail_limit": 0.0
+    }
+  }
+}
